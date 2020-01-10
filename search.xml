@@ -11,6 +11,39 @@
     笔者的迁移主要是从一台旧的电脑迁移到另一台电脑，换句话说，我完全没有继续在旧电脑上维护博客的打算，因此迁移方法简单粗暴。我在网上搜索的时候，看到有人利用git的branch，来实现多台设备同时能够维护博客，对我来说既麻烦也无必要，因而未予使用。
     </p></div>
 <h2 id="1-配置基础环境"><a class="header-anchor" href="#1-配置基础环境">¶</a>1️⃣ 配置基础环境</h2>
+<p>要配置基础环境，需要做以下几个步骤</p>
+<ol>
+<li>安装<code>git</code>，并生成密钥，保存到github账号中</li>
+<li>下载并安装<code>Node.js</code>（<code>npm</code>会自己跟着装好）</li>
+<li>使用<code>npm</code>安装<code>hexo</code> ，具体指令为<code>npm install -g hexo-cli</code></li>
+</ol>
+<p>这些都在 <a href="https://swayye.xyz/2018/12/28/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B%EF%BC%9A%E5%AE%89%E8%A3%85%E5%8F%8A%E9%83%A8%E7%BD%B2%E7%AF%87/" target="_blank" rel="noopener">建站历程：安装及部署篇</a> 这篇文章中有介绍，在此就不再介绍</p>
+<p>❗️ 注意，安装完<code>hexo</code>之后不用<code>hexo init</code></p>
+<h2 id="2-迁移相关文件"><a class="header-anchor" href="#2-迁移相关文件">¶</a>2️⃣ 迁移相关文件</h2>
+<p>需要迁移的文件只有：</p>
+<ol>
+<li>
+<p>博客配置文件<code>./_config.yml</code></p>
+</li>
+<li>
+<p>主题配置文件夹<code>./theme/</code></p>
+</li>
+<li>
+<p>文章及相关内容的文件夹<code>./source/</code></p>
+</li>
+<li>
+<p>模板文件夹<code>./scaffolds/</code></p>
+</li>
+<li>
+<p>记录博客所有的插件的文件<code>./package.json</code></p>
+</li>
+</ol>
+<h2 id="3-在新电脑中重新部署"><a class="header-anchor" href="#3-在新电脑中重新部署">¶</a>3️⃣ 在新电脑中重新部署</h2>
+<p>还记得上一步中拷贝的<code>./package.json</code>嘛，只要在同一文件目录下运行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>就会自动读取<code>package.json</code>文件中记录的插件列表，然后挨个安装，这样你在旧设备中安装的插件，在新设备中，都安装好了</p>
+<p>之后的一切就照常，修改文章，生成静态文件，部署到git</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>建站历程</category>
@@ -552,10 +585,10 @@
 </blockquote>
 <a id="more"></a>
 
-        <div id="aplayer-qKBvzFyF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-HbZEcOlg" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"mutex":true,"music":[{"title":"生きていたんだよな","author":"あいみょん","url":"http://music.163.com/song/media/outer/url?id=505109165.mp3","pic":"http://p2.music.126.net/QvGlOYCfXWx94a19_lmh5A==/3315027565433501.jpg?param=300x300","lrc":"/lrc/生きていたんだよな-あいみょん.lrc"}]};
-				  options.element = document.getElementById("aplayer-qKBvzFyF");
+				  options.element = document.getElementById("aplayer-HbZEcOlg");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
@@ -775,7 +808,7 @@ V20另一个亮点就是摄像头，4800万像素的后置摄像头，加上TOF�
 <p>为了方便记忆，建议将名字和邮箱直接设置成与github账号一致。</p>
 <h4 id="链接到远程仓库"><a class="header-anchor" href="#链接到远程仓库">¶</a>链接到远程仓库</h4>
 <p>依然是在linux的终端或者windows的git bash中，生成新的SSH钥匙：</p>
-<figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span></span></span><br></pre></td></tr></table></figure>
 <p>用你在本地配置中设置的邮箱替换<code>your_email@example.com</code>，随后按三次回车，你可以看到，共生成了两把钥匙，分别是秘钥和公钥，这里我们需要用到公钥，它被保存在了<code>C/Users/xxx/.ssh/id_rsa,pub</code> (windows)或者<code>~/.ssh/id_rsa.pub</code>(linux)中，找到并打开<code>id_rsa.pub</code>文件。</p>
 <p>登录你的github，在网页的右上角，点击三角形，进入<code>Setting</code>页面，随后进入<code>SSH and GPG keys</code>一栏，点击<code>New SSH key</code>。在<code>Title</code>框内给这个key取个名字，然后把<code>id_rsa.pub</code>的内容复制进去并保存。<br>
 <img src="https://github.com/SwayYe/Img/raw/master/blog/ssh%20key.png" alt="image"></p>
@@ -796,19 +829,19 @@ V20另一个亮点就是摄像头，4800万像素的后置摄像头，加上TOF�
 <li>
 <p>Linux：</p>
 <p>安装<code>npm</code>：</p>
-  <figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">$ sudo apt <span class="keyword">install</span> npm</span><br></pre></td></tr></table></figure>
+  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install npm</span></span><br></pre></td></tr></table></figure>
 <p>升级<code>npm</code>为最新版：</p>
   <figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">npm</span> install <span class="built_in">npm</span>@latest -g</span><br></pre></td></tr></table></figure>
 <p>安装用于安装<code>Node.js</code>的模块<code>n</code>：</p>
-  <figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">$ sudo npm <span class="keyword">install</span> -g n</span><br></pre></td></tr></table></figure>
+  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo npm install -g n</span></span><br></pre></td></tr></table></figure>
 <p>然后通过<code>n</code>模块安装稳定版本的<code>Node.js</code></p>
-  <figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line"><span class="variable">$ </span>sudo n stable</span><br></pre></td></tr></table></figure>
+  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo n stable</span></span><br></pre></td></tr></table></figure>
 <p>用与Windows同样的方法，检查<code>Node.js</code>和<code>npm</code>是否安装成功</p>
 </li>
 </ul>
 <h3 id="安装hexo"><a class="header-anchor" href="#安装hexo">¶</a>安装Hexo</h3>
 <p>在windows的命令行窗口或linux的终端中输入：</p>
-<figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g hexo-cli</span></span><br></pre></td></tr></table></figure>
 <p>耐心等待安装完成。</p>
 <h3 id="初始化博客"><a class="header-anchor" href="#初始化博客">¶</a>初始化博客</h3>
 <p>在Hexo安装完成后，用<code>cd</code>前往你想要放blog文件的文件夹，初始化blog，输入：</p>

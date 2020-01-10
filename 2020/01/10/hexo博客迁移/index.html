@@ -166,7 +166,7 @@
 <meta property="og:site_name" content="一葉扁舟　">
 <meta property="og:description" content="¶前言 本人在去年10月份购置了一台新的电脑，旧的电脑还能用，但大部分时间都是躺在寝室吃灰了。软件及文件，我都已经迁移到了新的电脑中，唯独还差Hexo博客相关的文件，一直留在旧电脑中。 拖到假期，终于有空来做博客迁移的工作，本以为会比较花时间，没想到还挺轻松就完成了，接下来就介绍一下流程">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-01-10T08:39:21.582Z">
+<meta property="og:updated_time" content="2020-01-10T08:58:32.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo博客迁移">
 <meta name="twitter:description" content="¶前言 本人在去年10月份购置了一台新的电脑，旧的电脑还能用，但大部分时间都是躺在寝室吃灰了。软件及文件，我都已经迁移到了新的电脑中，唯独还差Hexo博客相关的文件，一直留在旧电脑中。 拖到假期，终于有空来做博客迁移的工作，本以为会比较花时间，没想到还挺轻松就完成了，接下来就介绍一下流程">
@@ -570,7 +570,7 @@
                 
               
 
-              <time title="创建时间：2020-01-10 16:27:29 / 修改时间：16:39:21" itemprop="dateCreated datePublished" datetime="2020-01-10T16:27:29+08:00">2020-01-10</time>
+              <time title="创建时间：2020-01-10 16:27:29 / 修改时间：16:58:32" itemprop="dateCreated datePublished" datetime="2020-01-10T16:27:29+08:00">2020-01-10</time>
             
 
             
@@ -644,7 +644,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">291</span>
+                <span title="本文字数">773</span>
               
 
               
@@ -686,6 +686,39 @@
     笔者的迁移主要是从一台旧的电脑迁移到另一台电脑，换句话说，我完全没有继续在旧电脑上维护博客的打算，因此迁移方法简单粗暴。我在网上搜索的时候，看到有人利用git的branch，来实现多台设备同时能够维护博客，对我来说既麻烦也无必要，因而未予使用。
     </p></div>
 <h2 id="1-配置基础环境"><a class="header-anchor" href="#1-配置基础环境">¶</a>1️⃣ 配置基础环境</h2>
+<p>要配置基础环境，需要做以下几个步骤</p>
+<ol>
+<li>安装<code>git</code>，并生成密钥，保存到github账号中</li>
+<li>下载并安装<code>Node.js</code>（<code>npm</code>会自己跟着装好）</li>
+<li>使用<code>npm</code>安装<code>hexo</code> ，具体指令为<code>npm install -g hexo-cli</code></li>
+</ol>
+<p>这些都在 <a href="https://swayye.xyz/2018/12/28/%E5%BB%BA%E7%AB%99%E5%8E%86%E7%A8%8B%EF%BC%9A%E5%AE%89%E8%A3%85%E5%8F%8A%E9%83%A8%E7%BD%B2%E7%AF%87/" target="_blank" rel="noopener">建站历程：安装及部署篇</a> 这篇文章中有介绍，在此就不再介绍</p>
+<p>❗️ 注意，安装完<code>hexo</code>之后不用<code>hexo init</code></p>
+<h2 id="2-迁移相关文件"><a class="header-anchor" href="#2-迁移相关文件">¶</a>2️⃣ 迁移相关文件</h2>
+<p>需要迁移的文件只有：</p>
+<ol>
+<li>
+<p>博客配置文件<code>./_config.yml</code></p>
+</li>
+<li>
+<p>主题配置文件夹<code>./theme/</code></p>
+</li>
+<li>
+<p>文章及相关内容的文件夹<code>./source/</code></p>
+</li>
+<li>
+<p>模板文件夹<code>./scaffolds/</code></p>
+</li>
+<li>
+<p>记录博客所有的插件的文件<code>./package.json</code></p>
+</li>
+</ol>
+<h2 id="3-在新电脑中重新部署"><a class="header-anchor" href="#3-在新电脑中重新部署">¶</a>3️⃣ 在新电脑中重新部署</h2>
+<p>还记得上一步中拷贝的<code>./package.json</code>嘛，只要在同一文件目录下运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>就会自动读取<code>package.json</code>文件中记录的插件列表，然后挨个安装，这样你在旧设备中安装的插件，在新设备中，都安装好了</p>
+<p>之后的一切就照常，修改文章，生成静态文件，部署到git</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -957,7 +990,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">¶前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置基础环境"><span class="nav-number">2.</span> <span class="nav-text">¶1️⃣ 配置基础环境</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">¶前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置基础环境"><span class="nav-number">2.</span> <span class="nav-text">¶1️⃣ 配置基础环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-迁移相关文件"><span class="nav-number">3.</span> <span class="nav-text">¶2️⃣ 迁移相关文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-在新电脑中重新部署"><span class="nav-number">4.</span> <span class="nav-text">¶3️⃣ 在新电脑中重新部署</span></a></li></ol></div>
             
 
           </div>
@@ -989,7 +1022,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">38k</span>
+    <span title="站点总字数">39k</span>
   
 
   
@@ -998,7 +1031,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:04</span>
+    <span title="站点阅读时长">1:05</span>
   
 </div>
 <!--
