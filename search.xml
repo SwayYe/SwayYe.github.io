@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo博客迁移</title>
+    <url>/2020/01/10/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a class="header-anchor" href="#前言">¶</a>前言</h2>
+<p>本人在去年10月份购置了一台新的电脑，旧的电脑还能用，但大部分时间都是躺在寝室吃灰了。软件及文件，我都已经迁移到了新的电脑中，唯独还差Hexo博客相关的文件，一直留在旧电脑中。<br>
+拖到假期，终于有空来做博客迁移的工作，本以为会比较花时间，没想到还挺轻松就完成了，接下来就介绍一下流程</p>
+<a id="more"></a>
+<div class="note info"><p>
+    笔者的迁移主要是从一台旧的电脑迁移到另一台电脑，换句话说，我完全没有继续在旧电脑上维护博客的打算，因此迁移方法简单粗暴。我在网上搜索的时候，看到有人利用git的branch，来实现多台设备同时能够维护博客，对我来说既麻烦也无必要，因而未予使用。
+    </p></div>
+<h2 id="1-配置基础环境"><a class="header-anchor" href="#1-配置基础环境">¶</a>1️⃣ 配置基础环境</h2>
+]]></content>
+      <categories>
+        <category>建站历程</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2019年10月11月随笔</title>
     <url>/2019/12/10/2019%E5%B9%B410%E6%9C%8811%E6%9C%88%E9%9A%8F%E7%AC%94/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><img src="https://s2.ax1x.com/2019/12/23/lpXEEF.jpg" width="900" height="550" alt="git" align="center">
@@ -533,10 +552,10 @@
 </blockquote>
 <a id="more"></a>
 
-        <div id="aplayer-ywYlDfqh" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-qKBvzFyF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"mutex":true,"music":[{"title":"生きていたんだよな","author":"あいみょん","url":"http://music.163.com/song/media/outer/url?id=505109165.mp3","pic":"http://p2.music.126.net/QvGlOYCfXWx94a19_lmh5A==/3315027565433501.jpg?param=300x300","lrc":"/lrc/生きていたんだよな-あいみょん.lrc"}]};
-				  options.element = document.getElementById("aplayer-ywYlDfqh");
+				  options.element = document.getElementById("aplayer-qKBvzFyF");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
