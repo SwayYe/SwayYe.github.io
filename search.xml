@@ -4,7 +4,17 @@
     <title>读书笔记：《清华园日记》</title>
     <url>/2020/02/20/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%9A%E3%80%8A%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%E3%80%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><img src="/img/git.png" width="900" height="600" alt="git" align="center">
-<a id="more"></a>]]></content>
+<a id="more"></a>
+<blockquote class="blockquote-center"><p>这个时代最基本的特征之一就是：<br>
+群体的无意识行为<br>
+替代了个体的有意识行为</p>
+</blockquote>]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo博客迁移</title>
@@ -591,10 +601,10 @@
 </blockquote>
 <a id="more"></a>
 
-        <div id="aplayer-UkOqooAO" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-sEVXvtgt" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"mutex":true,"music":[{"title":"生きていたんだよな","author":"あいみょん","url":"http://music.163.com/song/media/outer/url?id=505109165.mp3","pic":"http://p2.music.126.net/QvGlOYCfXWx94a19_lmh5A==/3315027565433501.jpg?param=300x300","lrc":"/lrc/生きていたんだよな-あいみょん.lrc"}]};
-				  options.element = document.getElementById("aplayer-UkOqooAO");
+				  options.element = document.getElementById("aplayer-sEVXvtgt");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
