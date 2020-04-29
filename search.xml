@@ -612,10 +612,10 @@
 </blockquote>
 <a id="more"></a>
 
-        <div id="aplayer-KokQiWkc" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-FzITUFJF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"mutex":true,"music":[{"title":"生きていたんだよな","author":"あいみょん","url":"http://music.163.com/song/media/outer/url?id=505109165.mp3","pic":"http://p2.music.126.net/QvGlOYCfXWx94a19_lmh5A==/3315027565433501.jpg?param=300x300","lrc":"/lrc/生きていたんだよな-あいみょん.lrc"}]};
-				  options.element = document.getElementById("aplayer-KokQiWkc");
+				  options.element = document.getElementById("aplayer-FzITUFJF");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
@@ -835,7 +835,7 @@ V20另一个亮点就是摄像头，4800万像素的后置摄像头，加上TOF�
 <p>为了方便记忆，建议将名字和邮箱直接设置成与github账号一致。</p>
 <h4 id="链接到远程仓库"><a class="header-anchor" href="#链接到远程仓库">¶</a>链接到远程仓库</h4>
 <p>依然是在linux的终端或者windows的git bash中，生成新的SSH钥匙：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span></span><br></pre></td></tr></table></figure>
 <p>用你在本地配置中设置的邮箱替换<code>your_email@example.com</code>，随后按三次回车，你可以看到，共生成了两把钥匙，分别是秘钥和公钥，这里我们需要用到公钥，它被保存在了<code>C/Users/xxx/.ssh/id_rsa,pub</code> (windows)或者<code>~/.ssh/id_rsa.pub</code>(linux)中，找到并打开<code>id_rsa.pub</code>文件。</p>
 <p>登录你的github，在网页的右上角，点击三角形，进入<code>Setting</code>页面，随后进入<code>SSH and GPG keys</code>一栏，点击<code>New SSH key</code>。在<code>Title</code>框内给这个key取个名字，然后把<code>id_rsa.pub</code>的内容复制进去并保存。<br>
 <img src="https://github.com/SwayYe/Img/raw/master/blog/ssh%20key.png" alt="image"></p>
@@ -856,19 +856,19 @@ V20另一个亮点就是摄像头，4800万像素的后置摄像头，加上TOF�
 <li>
 <p>Linux：</p>
 <p>安装<code>npm</code>：</p>
-  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install npm</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">$ sudo apt <span class="keyword">install</span> npm</span><br></pre></td></tr></table></figure>
 <p>升级<code>npm</code>为最新版：</p>
   <figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">npm</span> install <span class="built_in">npm</span>@latest -g</span><br></pre></td></tr></table></figure>
 <p>安装用于安装<code>Node.js</code>的模块<code>n</code>：</p>
-  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo npm install -g n</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">$ sudo npm <span class="keyword">install</span> -g n</span><br></pre></td></tr></table></figure>
 <p>然后通过<code>n</code>模块安装稳定版本的<code>Node.js</code></p>
-  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo n stable</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line"><span class="variable">$ </span>sudo n stable</span><br></pre></td></tr></table></figure>
 <p>用与Windows同样的方法，检查<code>Node.js</code>和<code>npm</code>是否安装成功</p>
 </li>
 </ul>
 <h3 id="安装hexo"><a class="header-anchor" href="#安装hexo">¶</a>安装Hexo</h3>
 <p>在windows的命令行窗口或linux的终端中输入：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g hexo-cli</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
 <p>耐心等待安装完成。</p>
 <h3 id="初始化博客"><a class="header-anchor" href="#初始化博客">¶</a>初始化博客</h3>
 <p>在Hexo安装完成后，用<code>cd</code>前往你想要放blog文件的文件夹，初始化blog，输入：</p>
