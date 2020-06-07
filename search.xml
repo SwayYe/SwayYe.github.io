@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试页面</title>
-    <url>/2020/04/29/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><img src="/img/git.png" width="900" height="600" alt="git" align="center">
-<a id="more"></a>
-<p>text to be added</p>
-]]></content>
-  </entry>
-  <entry>
     <title>读书笔记：《清华园日记》</title>
     <url>/2020/02/20/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%9A%E3%80%8A%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%E3%80%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center"><p>我尝想，日记是最具体的生命的痕迹的记录。以后看起来，不但可以在里面找到以前的我的真面目，而且也可以发现我之所以成了现在的我的原因</p>
@@ -620,10 +612,10 @@
 </blockquote>
 <a id="more"></a>
 
-        <div id="aplayer-VVvdXaUq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-npviFxzE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"mutex":true,"music":[{"title":"生きていたんだよな","author":"あいみょん","url":"http://music.163.com/song/media/outer/url?id=505109165.mp3","pic":"http://p2.music.126.net/QvGlOYCfXWx94a19_lmh5A==/3315027565433501.jpg?param=300x300","lrc":"/lrc/生きていたんだよな-あいみょん.lrc"}]};
-				  options.element = document.getElementById("aplayer-VVvdXaUq");
+				  options.element = document.getElementById("aplayer-npviFxzE");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
